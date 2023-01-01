@@ -3,9 +3,9 @@ package controllers
 import (
 	"strconv"
 
+	"github.com/deuterium-cloud/go-web-crud/initializers"
+	"github.com/deuterium-cloud/go-web-crud/models"
 	"github.com/gin-gonic/gin"
-	"gitlab.com/deuterium/web-crud/initializers"
-	"gitlab.com/deuterium/web-crud/models"
 )
 
 var DefaultPage int64 = 0

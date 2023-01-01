@@ -1,4 +1,4 @@
-module gitlab.com/deuterium/web-crud
+module github.com/deuterium-cloud/go-web-crud
 
 go 1.19
 

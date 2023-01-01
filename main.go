@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/deuterium-cloud/go-web-crud/controllers"
+	"github.com/deuterium-cloud/go-web-crud/initializers"
 	"github.com/gin-gonic/gin"
-	"gitlab.com/deuterium/web-crud/controllers"
-	"gitlab.com/deuterium/web-crud/initializers"
 )
 
 func init() {

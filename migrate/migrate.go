@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gitlab.com/deuterium/web-crud/initializers"
-	"gitlab.com/deuterium/web-crud/models"
+	"github.com/deuterium-cloud/go-web-crud/initializers"
+	"github.com/deuterium-cloud/go-web-crud/models"
 )
 
 func init() {
