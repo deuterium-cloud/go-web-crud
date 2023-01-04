@@ -126,3 +126,13 @@ func DeleteAtom(context *gin.Context) {
 	}
 	context.JSON(200, gin.H{"message": "Successfully deleted Atom with id=" + id})
 }
+
+func UploadFile(context *gin.Context) {
+	file, err := context.FormFile("file")
+
+	if err != nil {
+		context.JSON(500, gin.H{"message": err})
+		return
+	}
+	context.SaveUploadedFile(file, "files/"+file.Filename)
+}

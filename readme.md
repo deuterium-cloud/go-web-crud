@@ -14,8 +14,16 @@ Package used:
 
 
 Start CompileDaemon with command: 
-/home/milan/go/bin/CompileDaemon -command="./web-crud"
+
+```$GOPATH/bin/CompileDaemon -command="./go-web-crud"```
+
+GOPATH can be find with 
+
+```go env GOPATH```
+
+In my case:
+
+```/home/milan/go/bin/CompileDaemon -command="./go-web-crud"```
 
 
-go env GOPATH
-$GOPATH/bin/CompileDaemon -command="./web-crud"
+

@@ -13,11 +13,15 @@ func init() {
 
 func main() {
 	router := gin.Default()
+
 	router.GET("/atoms/pagination", controllers.GetAtomsWithPagination)
 	router.GET("/atoms", controllers.GetAtoms)
 	router.GET("/atoms/:id", controllers.GetAtomById)
 	router.POST("/atoms", controllers.SaveNewAtom)
 	router.PUT("/atoms/:id", controllers.UpdateAtom)
 	router.DELETE("/atoms/:id", controllers.DeleteAtom)
+
+	router.MaxMultipartMemory = 8 << 20 // 8 Mb
+	router.POST("/upload", controllers.UploadFile)
 	router.Run() // listen and serve on 0.0.0.0:${PORT}
 }
